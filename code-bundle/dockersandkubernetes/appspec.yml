@@ -1,0 +1,18 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: c:\temp
+hooks:
+  BeforeInstall:
+    - location: scripts/install_ProjectUnderTestDependencies.sh
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: scripts/start_projectUnderTest.sh
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location: scripts/stop_program.sh
+      timeout: 300
+      runas: root

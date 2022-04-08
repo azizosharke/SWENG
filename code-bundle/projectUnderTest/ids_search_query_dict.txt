@@ -1,0 +1,1 @@
+{"4fe1dff8-d7a8-4d21-9714-8191fb61b1e6": {"py/object": "__mp_main__.SearchQuery", "file_name_to_search": "Macbeth.txt", "text_to_search": "William", "status": "done", "found_matches": 1}}

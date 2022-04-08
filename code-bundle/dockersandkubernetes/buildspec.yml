@@ -1,0 +1,33 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - sudo yum install python3-pip
+      - cd projectUnderTest
+      - pip3 install -r requirements.txt --user
+      - cd ..
+      - cd testRunner
+      - ./gradlew build
+      - cd ..
+  build:
+    commands:
+      - cd projectUnderTest
+      - echo Build started on `date`
+      - echo Compiling the Python code...
+      - python3 testProject.py
+  post_build:
+    commands:
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - projectUnderTest/testProject.py
+    - appspec.yml
+    - projectUnderTest/requirements.txt
+    - projectUnderTest/Macbeth.txt
+    - projectUnderTest/Covid19Data.txt
+    - projectUnderTest/ids_search_query_dict.txt
+    - projectUnderTest/IdsSearchQueryDict
+    - scripts/install_ProjectUnderTestDependencies.sh
+    - scripts/start_projectUnderTest.sh
+    - scripts/stop_program.sh

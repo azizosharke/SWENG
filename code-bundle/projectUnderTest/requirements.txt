@@ -1,0 +1,4 @@
+Flask==2.0.3
+flask_cors
+NamedAtomicLock
+jsonpickle~=2.1.0
