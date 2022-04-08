@@ -1,0 +1,8 @@
+{
+  "server_url": "http://127.0.0.1:5000/search",
+  "polling_interval": 50,
+  "time_limit": 300000,
+  "search_file": "Covid19Data.txt",
+  "search_text": "United States",
+  "execution_count": 10
+}

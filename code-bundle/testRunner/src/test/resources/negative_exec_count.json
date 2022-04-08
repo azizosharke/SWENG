@@ -1,0 +1,6 @@
+{
+  "server_url": "http://localhost:63342",
+  "search_file": "cities.txt",
+  "search_text": "Dublin",
+  "execution_count": -1
+}
