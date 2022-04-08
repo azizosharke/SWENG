@@ -1,4 +1,4 @@
-# SWENG
+# SWENG - Group 5
 
 # Project Overview
 # Main Goals:
